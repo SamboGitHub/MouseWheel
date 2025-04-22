@@ -66,12 +66,12 @@ void setup() {
   Mouse.begin();
 }
 void loop(){ 
-  if(counter >= 4) {
-    Mouse.move(0,0,1);
-    counter -= 4;
-  } else if(counter <= -4) {
-    Mouse.move(0,0,-1);
-    counter += 4;
+  if(counter >= 2) {
+    Mouse.move(0,0,-1000);
+    counter -= 2;
+  } else if(counter <= -2) {
+    Mouse.move(0,0,1000);
+    counter += 2;
   } 
 
   if(buttonpress== 1) {
